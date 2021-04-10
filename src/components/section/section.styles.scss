@@ -1,0 +1,28 @@
+.section {
+  width: 100%;
+  .sectionHeading {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #000;
+    font-size: 1.7em;
+    margin-left: 40px;
+
+    @media (max-width: 540px) {
+      // background-color: #fabea1;
+      margin: 20px 0 0 30px;
+      font-size: 1.5em;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+
+    @media (max-width: 540px) {
+      padding: 20px 10px;
+    }
+  }
+}

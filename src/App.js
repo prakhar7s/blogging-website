@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+
+import sectionOne from "./assets/data/sectionOne";
+import Section from "./components/section/section.component";
+import LandingPage from "./components/landing-page/landing-page.component";
+import Header from "./components/header/header.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <LandingPage />
+      <main>
+        <Section
+          cardData={sectionOne}
+          sectionHeading={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsa?"
+          }
+        />
+      </main>
     </div>
   );
 }

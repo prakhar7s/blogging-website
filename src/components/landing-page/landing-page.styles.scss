@@ -1,0 +1,8 @@
+.landingPage {
+  background-color: #212121;
+  height: 100vh;
+
+  @media (max-width: 540px) {
+    height: 90vh;
+  }
+}
